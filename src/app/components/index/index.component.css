@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Reduce gap to fit better on smaller screens */
+    justify-content: center; /* Center items when they wrap */
+  }
+  
+  .option-button {
+    padding: 10px 20px;
+    font-size: 3rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 3rem; /* Smaller font size on smaller screens */
+    }
+    
+    .option-button {
+      font-size: 2rem; /* Smaller font size for buttons */
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .option-button {
+      font-size: 1.5rem; /* Further reduce button font size */
+      padding: 6px 12px; /* Further adjust padding */
+    }
+  }
+  
+  

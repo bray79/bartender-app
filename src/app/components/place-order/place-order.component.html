@@ -1,0 +1,35 @@
+<div class="order-form-container">
+    <h3>Order {{ cocktail.name }}</h3>
+    
+    <!-- Input for Customer Name -->
+    <form [formGroup]="orderForm" (ngSubmit)="placeOrder()">
+      <label for="customerName" class="form-label">Your Name:</label>
+      <input 
+        type="text" 
+        id="customerName" 
+        formControlName="customerName" 
+        placeholder="Enter your name" 
+        class="form-input"
+      />
+
+      <!-- Name Required Message -->
+      <div *ngIf="orderForm.get('customerName')?.invalid && (orderForm.get('customerName')?.dirty || orderForm.get('customerName')?.touched)">
+        <small class="error-message" *ngIf="orderForm.get('customerName')?.errors?.['required']">Name is required.</small>
+      </div>
+      
+      <!-- Button to Place Order -->
+      <button 
+        type="submit" 
+        class="place-order-button" 
+        [disabled]="orderForm.invalid"
+      >
+        Place Order
+      </button>
+    </form>
+</div>
+  
+  
+  
+  
+  
+  

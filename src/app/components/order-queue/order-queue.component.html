@@ -1,0 +1,17 @@
+<div class="order-queue-container">
+    <h2>Order Queue</h2>
+  
+    <div *ngFor="let order of orders" class="order-card">
+      <h3>Order ID: {{ order.id }}</h3>
+      <p><strong>Cocktail ID:</strong> {{ order.cocktailId }} ({{ order.cocktailName }})</p>
+      <p><strong>Customer Name:</strong> {{ order.customerName }}</p>
+      <p><strong>Status:</strong> {{ order.status }}</p>
+      <button *ngIf="order.status !== 'Pick Up'" 
+            (click)="setStatusToPickup(order.id)" 
+            class="option-button">
+      Set Order Status to Pick Up
+    </button>
+    </div>
+
+    <button (click)="navigateTo('index')" class="option-button">Dashboard</button>
+</div>

@@ -1,0 +1,16 @@
+<div class="menu-container">
+    <h2>Cocktail Menu</h2>
+  
+    <div *ngFor="let cocktail of cocktails" class="cocktail-card">
+      <h3>{{ cocktail.name }}</h3>
+      <p><strong>Ingredients:</strong> {{ cocktail.ingredients.join(', ') }}</p>
+      <p><strong>Price:</strong> ${{ cocktail.price.toFixed(2) }}</p>
+      
+      <!-- Pass the selected cocktail to place-order component -->
+      <app-place-order [cocktail]="cocktail"></app-place-order>
+    </div>
+
+    <button (click)="navigateTo('index')" class="option-button">Dashboard</button>
+</div>
+  
+  

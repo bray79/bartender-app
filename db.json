@@ -1,0 +1,77 @@
+{
+  "cocktails": [
+    {
+      "id": "0",
+      "name": "Manhattan",
+      "ingredients": [
+        "Whiskey",
+        "Vermouth",
+        "Bitters",
+        "Cherry"
+      ],
+      "price": 13.99
+    },
+    {
+      "id": "1",
+      "name": "Aperol Spritz",
+      "ingredients": [
+        "Prosecco",
+        "Aperol",
+        "Soda Water",
+        "Orange Slice"
+      ],
+      "price": 12.5
+    },
+    {
+      "id": "2",
+      "name": "Bellini",
+      "ingredients": [
+        "Peach Puree",
+        "Prosecco",
+        "White Peaches",
+        "Peach Slice"
+      ],
+      "price": 12.99
+    },
+    {
+      "id": "3",
+      "name": "Margarita",
+      "ingredients": [
+        "Tequila",
+        "Lime Juice",
+        "Triple Sec"
+      ],
+      "price": 8.99
+    },
+    {
+      "id": "4",
+      "name": "Old Fashioned",
+      "ingredients": [
+        "Bourbon",
+        "Sugar",
+        "Angostura Bitters"
+      ],
+      "price": 10.5
+    }
+  ],
+  "orders": [
+    {
+      "id": "3f50",
+      "cocktailId": "0",
+      "customerName": "Brayden",
+      "status": "Pick Up"
+    },
+    {
+      "id": "89d7",
+      "cocktailId": "4",
+      "customerName": "Bob Hunt",
+      "status": "Preparing"
+    },
+    {
+      "id": "c1e4",
+      "cocktailId": "3",
+      "customerName": "Rich White",
+      "status": "Pick Up"
+    }
+  ]
+}
